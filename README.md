@@ -144,8 +144,8 @@ jobs:
 
 Web ブラウザーの操縦を自動化するためのツール
 
-- [Puppeteer](https://pptr.dev/)
 - [Playwright](https://playwright.dev/)
+- [Puppeteer](https://pptr.dev/)
 - [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html)
 
 ---
