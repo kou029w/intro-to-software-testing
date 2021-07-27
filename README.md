@@ -140,7 +140,7 @@ Web ブラウザーの操縦を自動化するためのツール
 
 ## まとめ
 
-JavaScript と TypeScript での開発を支える便利なツールの紹介
+JavaScript と TypeScript での開発を支える便利なツールを紹介
 
 ---
 
