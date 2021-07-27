@@ -133,8 +133,9 @@ Web ブラウザーの操縦を自動化するためのツール
 - 型システム … [TypeScript](https://www.typescriptlang.org/)
 - 静的解析ツール … [ESLint](https://eslint.org/)
 - UI を確認するためのショーケースツール … [Storybook](https://storybook.js.org/)
+- 依存関係の自動更新 … [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 - セキュリティ監査 … [LGTM](https://lgtm.com/)、[Snyk](https://snyk.io/)
-- ライセンス監査 … [FOSSA](https://fossa.com/)
+- コンプライアンス監査 … [FOSSA](https://fossa.com/)
 
 ---
 
