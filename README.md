@@ -20,6 +20,9 @@ WebDINO Japan エンジニア
 
 品質とは製品としての価値
 
+開発したサービスや製品によって利用者への価値の提供を目指している
+製品としての価値を支えているのは品質
+
 ---
 
 ## <ruby>狩野<rp> (</rp><rt>かのう</rt><rp>)</rp></ruby>モデル
@@ -70,18 +73,9 @@ WebDINO Japan エンジニア
 
 品質の評価
 
----
+> ソフトウェアが正しく動作しないと、経済的な損失、時間の浪費、信用の失墜など、さまざまな問題が発生し、時には傷害や死亡事故になることもある。ソフトウェアテストはソフトウェアの品質を評価し、運用環境でソフトウェアの故障が発生するリスクを低減する 1 つの手段である。
 
-## テストピラミッド
-
-Mike Cohn によって提唱
-
-コストに応じた適切な粒度で行う\
-テスト戦略
-
-![bg right fit](https://i.gyazo.com/dd948eed8f6c94e7821c92b65e38c960.png)
-
-<!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
+<!-- _footer: 引用元: JSTQB (2021) http://jstqb.jp/dl/JSTQB-SyllabusFoundation_Version2018V31.J03.pdf 「1.1 テストとは何か？」より -->
 
 ---
 
@@ -176,6 +170,20 @@ JavaScript と TypeScript での開発を支える便利なツールを紹介
 - ソフトウェア設計技法
 - テスト設計技法
 - リファクタリング
+
+---
+
+## テストピラミッド
+
+テスト戦略の 1 つ
+
+コストに応じた適切な粒度で行う
+
+Mike Cohn によって提唱
+
+![bg right fit](https://i.gyazo.com/dd948eed8f6c94e7821c92b65e38c960.png)
+
+<!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
 
 ---
 
