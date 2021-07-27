@@ -24,11 +24,11 @@ WebDINO Japan エンジニア
 
 ## <ruby>狩野<rp> (</rp><rt>かのう</rt><rp>)</rp></ruby>モデル
 
-![bg right fit](https://www.juse.or.jp/departmental/point02/img/img08.jpg)
+![bg right:60% fit](https://i.gyazo.com/6f612bf15c62fd9b8465bcbe21d4d397.png)
 
 顧客の求める品質のモデル
 
-<!-- _footer: 図の出典: [狩野モデルと商品企画：部門別スキル - 品質管理なら日本科学技術連盟](https://www.juse.or.jp/departmental/point02/08.html) -->
+<!-- _footer: 図の出典: 狩野紀昭 (1984)「魅力的品質と当たり前品質」をもとに改変して作成 -->
 
 ---
 
