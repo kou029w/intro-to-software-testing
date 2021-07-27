@@ -1,0 +1,23 @@
+name: github-pages
+on:
+  push:
+    branches: [main]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Git config
+        run: |
+          git config user.name bot
+          git config user.email bot@example
+      - name: Build
+        run: |
+          git subtree add --prefix pages origin gh-pages
+          npx @marp-team/marp-cli README.md -o pages/index.html
+      - name: Publish
+        run: |
+          git add -f pages
+          if git commit -m update; then
+            git subtree push --prefix pages origin gh-pages
+          fi
