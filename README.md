@@ -88,17 +88,17 @@ WebDINO Japan エンジニア
 
 ## 便利な CI/CD サービスとテストツール
 
-JavaScript と TypeScript での開発を支える便利なツールの紹介
+JavaScript と TypeScript での開発を支える便利なサービスやツールの紹介
 
 ---
 
-## 実行環境
+## CI/CD サービス
 
 CI/CD を実現するための環境
 
-- 手元のパソコン
-- [GitHub Actions](https://github.co.jp/features/actions)
 - [CircleCI](https://circleci.com/ja/)
+- [GitHub Actions](https://github.co.jp/features/actions)
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
 ---
 
@@ -157,7 +157,7 @@ Web ブラウザーの操縦を自動化するためのツール
 
 ## まとめ
 
-JavaScript と TypeScript での開発を支える便利なツールを紹介
+JavaScript と TypeScript での開発を支える便利なサービスやツールを紹介
 
 ---
 
