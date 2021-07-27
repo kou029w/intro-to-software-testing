@@ -108,6 +108,28 @@ CI/CD を実現するための環境
 
 ---
 
+## GitHub Actions による自動テストの例
+
+`.github/workflows/test.yml`
+
+```yml
+name: test
+on: push
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with: { node-version: lts/*, cache: npm }
+      - run: npm ci
+      - run: npm test
+```
+
+`git push`するたびに繰り返し GitHub が実行環境を構築し自動的にテストを実行
+
+---
+
 ## テストフレームワーク
 
 テストをサポートするための一連のツール
