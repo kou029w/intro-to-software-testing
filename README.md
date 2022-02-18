@@ -250,8 +250,8 @@ Microsoft が開発した E2E テストツール
 
 クロスブラウザー・クロスプラットフォームをサポート
 
-- ブラウザー: Chrome, Firefox, Safari, Opera, Edge
-- プラットフォーム: Windows, macOS, Linux, Android, iOS
+- ブラウザー: Chromium, WebKit, Firefox
+- プラットフォーム: Windows, macOS, Linux
 
 ```console
 $ npm i -D playwright @playwright/test                      # インストール
