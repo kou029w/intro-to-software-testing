@@ -12,34 +12,36 @@ WebDINO Japan エンジニア
 
 ---
 
-## なぜテストをするのか
+## テスト
+
+品質の評価
+
+![bg right:69%](https://i.gyazo.com/51f6e0a850e1f40da704b14f3c0db3dc.jpg)
+
+<!-- _footer: 画像: 最初期のコンピューターのバグ (1947) https://americanhistory.si.edu/collections/search/object/nmah_334663 -->
+
+---
+
+## テスト
+
+品質を評価することでより良いサービスの提供を目指す
+
+> ソフトウェアが正しく動作しないと、**経済的な損失**、**時間の浪費**、**信用の失墜**など、さまざまな問題が発生し、時には傷害や死亡事故になることもある。ソフトウェアテストはソフトウェアの品質を評価し、運用環境でソフトウェアの故障が発生するリスクを低減する 1 つの手段である。
+
+<!-- _footer: 引用元: JSTQB (2021) http://jstqb.jp/dl/JSTQB-SyllabusFoundation_Version2018V31.J03.pdf 「1.1 テストとは何か？」より -->
 
 ---
 
 ## 品質
 
-品質とは製品としての価値
+サービスや製品としての価値
 
-開発したサービスや製品によって利用者への価値の提供を目指している
-製品としての価値を支えているのは品質
+開発したサービスや製品によって\
+利用者に価値を提供することが目的
 
----
-
-## <ruby>狩野<rp> (</rp><rt>かのう</rt><rp>)</rp></ruby>モデル
-
-![bg right:60% fit](https://i.gyazo.com/6f612bf15c62fd9b8465bcbe21d4d397.png)
-
-顧客の求める品質のモデル
+![bg right:50%](https://i.gyazo.com/6f612bf15c62fd9b8465bcbe21d4d397.png)
 
 <!-- _footer: 図の出典: 狩野紀昭 (1984)「魅力的品質と当たり前品質」をもとに改変して作成 -->
-
----
-
-## 魅力的品質と当たり前品質
-
-魅力的品質についてはみなさんが考えてほしい
-
-ソフトウェア開発における当たり前品質に関するヒントをご紹介します
 
 ---
 
@@ -47,66 +49,125 @@ WebDINO Japan エンジニア
 
 変更すると決めてからユーザーが使えるようになるまでの一連の継続的な活動
 
-「サイクルタイムを短く、品質を高く」
-
 > ![デプロイメントパイプライン](https://i.gyazo.com/96475ee59df81cb75a2e5ca53cba5758.png)
 
 <!-- _footer: 図の出典: David Farley, Jez Humble, 和智 右桂, 高木 正弘 (2017)「継続的デリバリー」 -->
 
-品質: 最適なレベルに保つ
-手段: 自動化し機械によって繰り返す、頻繁なフィードバックを得る
+すばやく、繰り返し、頻繁にフィードバックを得ることで最適な品質を保ち続ける
 
 ---
 
-## 自動化とフィードバック
+## デプロイメントパイプラインとフィードバック
 
 どちらも欠かせない
 
-なぜなら…
-
-- 自動化していなければ素早く変更を反映させられない
-- フィードバックが得られなければ最適な品質を見極められない
+- 自動化していなければサービスをすばやく利用者に提供できない
+- フィードバックがなければ最適なサービスの品質を見極められない
 
 ---
 
-## テスト
+## コードとテスト
 
-品質の評価
+どちらも欠かせない
 
-> ソフトウェアが正しく動作しないと、経済的な損失、時間の浪費、信用の失墜など、さまざまな問題が発生し、時には傷害や死亡事故になることもある。ソフトウェアテストはソフトウェアの品質を評価し、運用環境でソフトウェアの故障が発生するリスクを低減する 1 つの手段である。
-
-<!-- _footer: 引用元: JSTQB (2021) http://jstqb.jp/dl/JSTQB-SyllabusFoundation_Version2018V31.J03.pdf 「1.1 テストとは何か？」より -->
-
----
-
-## まとめ
-
-- 品質とは製品としての価値
-- 品質を高めるヒント … CI/CD、テスト
+- コードが存在しなければサービスを提供できない
+- テストが存在しなければ最適なコードの品質を見極められない
 
 ---
 
-## 便利な CI/CD サービスとテストツール
+## ここまでのまとめ
 
-JavaScript と TypeScript での開発を支える便利なサービスやツールの紹介
+- テストとは品質の評価
+- 最適なコードの品質を見極め、改善することでより良いサービスを提供できる
 
 ---
 
-## CI/CD サービス
+## どうやってテストするのか
 
-CI/CD を実現するための環境
+---
 
-- [CircleCI](https://circleci.com/ja/)
-- [GitHub Actions](https://github.co.jp/features/actions)
-- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+## 前提
+
+実践の方法は現場によって異なるが、まず然るべき品質の確保が最優先事項
+
+大切なのは現実の問題に向き合い価値を提供するということ
+
+---
+
+## TDD (Test-Driven Development)
+
+最初からテストをすばやいサイクルで行い続ける設計手法
+
+ウォーターフォール型の重たい方法論からの脱却が背景にある
+
+![w:1200](https://ptuml.hackmd.io/svg/SoWkIImgAStDKIWjJarEB4xbAixEp2j8B4hCXOaeL7CfA2Gb9cUd5-MNvgKav-Va5ocKPsIMf8B4yujIKeiWOaavG4L0iSIYelnoPA5QBYwDvxFNFLinyt7Jf6SRTprkQdpSrAsfe6kdeF6ukUrnqyx7pHqWgTax7ZVsQt9X4uGeRjhyk7dFu-PE975bDpSJCmC3wvpCl5IzfFoS52wioeZMRbsIMb5Y1H5Li5AmIRA3k-RfaetFfawtqK-oms47n4Eh7ZTFVToqy77J-iTD-y7SpO-RDW2jCZ1sT3DtHBSA8ig5HoC5ngBvu5d7XATTyw4-m6qVo49i4ORV1mwfUId0bCG50000)
+
+コードより先にテストを書く (テストファースト)
+
+<!-- _footer: 参考文献: Kent Beck (2002) "Test Driven Development" -->
+
+---
+
+## 「なぜ繰り返しテストを行うか」
+
+現代のソフトウェア開発においてこの問い自体あまり重要でなくなった
+
+なぜなら
+
+- すばやく変化に対応し続けるアジャイルの考え方は技術の進展とともに浸透
+- 一方でリリースして終了というウォーターフォール型のプロジェクトは衰退
+
+<!-- _footer: Netflix (2018)の事例: [数時間でのカナリアリリース](https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249#9868:~:text=Deployments%20are%20routine%20and%20frequent%2C%20canaries%20take%20hours%20instead%20of%20days) -->
+
+---
+
+## 何をテストするのか
+
+---
+
+## テストピラミッド
+
+コストに応じた適切な粒度と規模を保つテスト戦略
+
+ユニットテストのような小さなテストを大規模に行い、エンド・トゥ・エンド (E2E) テストのようなコストのかかるテストはできるだけ小規模に保つ
+
+![bg fit right:45%](https://i.gyazo.com/dd948eed8f6c94e7821c92b65e38c960.png)
+
+<!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
+
+---
+
+## たとえば
+
+最初に、静的型解析や静的コード解析などゼロコストで始められるものを行う
+
+- サービス: GitHub Actions
+- ツール: TypeScript と ESLint
+
+基本的には、ユニットテストなど低コストなテストを行う
+
+- ツール: Jest
+
+実際にサービスを運用していくには、E2E テストなど高コストなテストを行う
+
+- ツール: Playwright
+
+---
+
+## GitHub Actions
+
+GitHub の提供する自動実行環境
+
+https://docs.github.com/ja/actions
 
 ---
 
 ## GitHub Actions による自動テストの例
 
-`.github/workflows/test.yml`
+`git push` するたびにテストを行う
 
 ```yml
+# .github/workflows/test.yml
 name: test
 on: push
 jobs:
@@ -120,70 +181,87 @@ jobs:
       - run: npm test
 ```
 
-`git push`するたびに繰り返し GitHub が実行環境を構築し自動的にテストを実行
+テストだけでなく GitHub の提供する実行環境の上で好きなジョブを実行できる
 
 ---
 
-## テストフレームワーク
+## TypeScript
 
-テストをサポートするための一連のツール
+https://www.typescriptlang.org
 
-- [Jest](https://jestjs.io/ja/)
-- [Mocha](https://mochajs.org/)
-- [Tape](https://github.com/substack/tape)
+Microsoft が開発した JavaScript に型を指定できるようにした言語
 
----
-
-## E2E テストツール
-
-Web ブラウザーの操縦を自動化するためのツール
-
-- [Playwright](https://playwright.dev/)
-- [Puppeteer](https://pptr.dev/)
-- [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html)
+> - 新しい記法を使うが、ブラウザの互換性を維持するコードを書く手法としてコンパイラを使うのが当たり前になってきた
+> - 大規模になると（小規模でも）、型情報があるとエラーチェックが実装中に行われるので開発がしやすくなる
+> - 型を持った JavaScript には TypeScript と flowtype の 2 つがあるが、シェアが高いのが TypeScript
+>
+> 引用元: 仕事ですぐに使える TypeScript ドキュメント 前書き\
+> https://future-architect.github.io/typescript-guide/preface.html
 
 ---
 
-## 他
+## TypeScript を試してみる
 
-- 型システム … [TypeScript](https://www.typescriptlang.org/)
-- 静的解析ツール … [ESLint](https://eslint.org/)
-- UI を確認するためのショーケースツール … [Storybook](https://storybook.js.org/)
-- 依存関係の自動更新 … [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
-- セキュリティ監査 … [LGTM](https://lgtm.com/)、[Snyk](https://snyk.io/)
-- コンプライアンス監査 … [FOSSA](https://fossa.com/)
+https://www.typescriptlang.org/ja/play
 
 ---
 
-## まとめ
+## ESLint
 
-JavaScript と TypeScript での開発を支える便利なサービスやツールを紹介
+https://eslint.org
+
+静的コード解析ツール
+
+チェックできることの例
+
+- デッドコードの検知 (no-unused-vars, no-unreachable, etc.)
+- コードの複雑さ (max-lines, max-depth, complexity, etc.)
+
+```console
+$ npm init @eslint/config # インストール
+$ npx eslint --fix .      # 実行と自動修正
+```
 
 ---
 
-## 後付
+## Jest
+
+https://jestjs.io/ja/
+
+テスティングフレームワーク
+
+```console
+$ npm i -D jest # インストール
+$ npx jest      # 実行
+```
 
 ---
 
-## 話していないこと
+## Playwright
 
-- ソフトウェア設計技法
-- テスト設計技法
-- リファクタリング
+https://playwright.dev
+
+Microsoft が開発した E2E テストツール
+
+クロスブラウザー・クロスプラットフォームをサポート
+
+- ブラウザー: Chrome, Firefox, Safari, Opera, Edge
+- プラットフォーム: Windows, macOS, Linux, Android, iOS
+
+```console
+$ npm i -D playwright @playwright/test                      # インストール
+$ npx playwright codegen -o a.test.mjs https://example.com  # テストコードの自動生成
+$ npx playwright test                                       # テストの実行
+```
 
 ---
 
-## テストピラミッド
+## ここまでのまとめ
 
-テスト戦略の 1 つ
-
-コストに応じた適切な粒度で行う
-
-Mike Cohn によって提唱
-
-![bg right fit](https://i.gyazo.com/dd948eed8f6c94e7821c92b65e38c960.png)
-
-<!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
+- 何を・どうやってテストするのか
+  - TDD … 最初からテストをすばやいサイクルで行い続ける設計手法
+  - テストピラミッド … コストに応じた適切な粒度と規模を保つテスト戦略
+- テストを実践するための具体的なサービスやツールの紹介
 
 ---
 
