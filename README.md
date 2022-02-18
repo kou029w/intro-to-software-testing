@@ -102,7 +102,9 @@ WebDINO Japan エンジニア
 
 ![w:1200](https://ptuml.hackmd.io/svg/SoWkIImgAStDKIWjJarEB4xbAixEp2j8B4hCXOaeL7CfA2Gb9cUd5-MNvgKav-Va5ocKPsIMf8B4yujIKeiWOaavG4L0iSIYelnoPA5QBYwDvxFNFLinyt7Jf6SRTprkQdpSrAsfe6kdeF6ukUrnqyx7pHqWgTax7ZVsQt9X4uGeRjhyk7dFu-PE975bDpSJCmC3wvpCl5IzfFoS52wioeZMRbsIMb5Y1H5Li5AmIRA3k-RfaetFfawtqK-oms47n4Eh7ZTFVToqy77J-iTD-y7SpO-RDW2jCZ1sT3DtHBSA8ig5HoC5ngBvu5d7XATTyw4-m6qVo49i4ORV1mwfUId0bCG50000)
 
-コードより先にテストを書く (テストファースト)
+設計して、すぐ書く、すぐリファクタリングする
+
+テストはコードより先
 
 <!-- _footer: 参考文献: Kent Beck (2002) "Test Driven Development" -->
 
