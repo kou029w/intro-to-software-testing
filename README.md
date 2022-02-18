@@ -166,7 +166,7 @@ https://docs.github.com/ja/actions
 
 ## GitHub Actions による自動テストの例
 
-`git push` するたびにテストを行う
+`git push` するとテストを実行する例
 
 ```yml
 # .github/workflows/test.yml
