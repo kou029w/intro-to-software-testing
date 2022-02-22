@@ -16,18 +16,18 @@ jobs:
           path: ${{ steps.brew_cache.outputs.dir }}
           key: brew-${{ hashFiles('**/Brewfile.lock.json') }}
           restore-keys: brew-
-      - name: Installing dependencies
-        run: |
-          yarn install
-          brew bundle
       - name: Git config
         run: |
           git config user.name bot
           git config user.email bot@example
-      - name: Build
-        run: |
           git subtree add --prefix pages origin gh-pages
+      - name: Build pages
+        run: |
+          yarn install
           yarn build
+      - name: Build book
+        run: |
+          brew bundle
           mdbook build
       - name: Publish
         run: |
