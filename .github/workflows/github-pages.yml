@@ -7,6 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with: { node-version: lts/*, cache: yarn }
+      - id: brew_cache
+        run: echo "::set-output name=dir::$(brew --cache)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.brew_cache.outputs.dir }}
+          key: brew-${{ hashFiles('**/Brewfile.lock.json') }}
+          restore-keys: brew-
+      - name: Installing dependencies
+        run: |
+          yarn install
+          brew bundle
       - name: Git config
         run: |
           git config user.name bot
@@ -14,7 +27,8 @@ jobs:
       - name: Build
         run: |
           git subtree add --prefix pages origin gh-pages
-          npx @marp-team/marp-cli README.md -o pages/index.html
+          yarn build
+          mdbook build
       - name: Publish
         run: |
           git add -f pages

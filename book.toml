@@ -1,0 +1,12 @@
+[book]
+language = "ja"
+title = "Jestではじめるテスト"
+authors = ["Kohei Watanabe"]
+
+[build]
+build-dir = "pages/book"
+
+[output.html]
+site-url = "/intro-to-software-testing/book/"
+git-repository-url = "https://github.com/kou029w/intro-to-software-testing"
+edit-url-template = "https://github.com/kou029w/intro-to-software-testing/edit/main/{path}"

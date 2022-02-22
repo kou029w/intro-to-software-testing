@@ -1,0 +1,14 @@
+{
+  "name": "@kou029w/intro-to-software-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "marp README.md --output pages/index.html",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.6.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-md-nocjsp": "^1.2.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "entries": {
+    "brew": {
+      "mdbook": {
+        "version": "0.4.15",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:ce829c6916e6e0e92b87fc7b50d32717e425a34daeb599e91de63e82490139c5",
+              "sha256": "ce829c6916e6e0e92b87fc7b50d32717e425a34daeb599e91de63e82490139c5"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:b5567150ceb34975ac1410a06d36a92652e37ededcf77bcc1487afe77b9669ec",
+              "sha256": "b5567150ceb34975ac1410a06d36a92652e37ededcf77bcc1487afe77b9669ec"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:275537af633a8a359d7109a0777c535ae1b2e36a07566c49b021589e8a8bfcf5",
+              "sha256": "275537af633a8a359d7109a0777c535ae1b2e36a07566c49b021589e8a8bfcf5"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:f7ea2bc7a6bb74fade5123e1e4523e1f49addca4730b5e61d66bb13feddf2e83",
+              "sha256": "f7ea2bc7a6bb74fade5123e1e4523e1f49addca4730b5e61d66bb13feddf2e83"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:a8a40fb27378a45e8543072fdb73036e6977d634d3d974834fa1208daca054a1",
+              "sha256": "a8a40fb27378a45e8543072fdb73036e6977d634d3d974834fa1208daca054a1"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/mdbook/blobs/sha256:7e8a47e663ef70129e878cff9c43336e37d50739847cd2222995fedd5b684bd4",
+              "sha256": "7e8a47e663ef70129e878cff9c43336e37d50739847cd2222995fedd5b684bd4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "system": {
+    "linux": {
+      "Ubuntu 20.04.4 LTS (focal)": {
+        "HOMEBREW_VERSION": "3.3.16-15-g6661f5b",
+        "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
+        "Homebrew/linuxbrew-core": "f9808921157b103d2499601d1b660fbcea526749",
+        "GCC": "9.3.0"
+      }
+    }
+  }
+}
