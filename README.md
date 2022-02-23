@@ -76,7 +76,7 @@ footer {
 
 ---
 
-## TDD (Test-Driven Development)
+## Test-Driven Development (TDD)
 
 最初からテストをすばやいサイクルで行い続ける設計手法
 
@@ -237,7 +237,7 @@ $ npx eslint --fix .      # 実行と自動修正
 
 ## Jest
 
-https://jestjs.io/ja/
+https://jestjs.io/ja
 
 テスティングフレームワーク
 
@@ -272,6 +272,12 @@ $ npx playwright test                                       # テストの実行
 - 何を・どうやってテストするのか
   - テストピラミッド … コストに応じた適切な粒度と規模を保つ
 - テストを実践するための具体的なサービスやツールの紹介
+
+---
+
+## Jestではじめるテスト
+
+https://kou029w.github.io/intro-to-software-testing/book/
 
 ---
 
