@@ -235,6 +235,12 @@ $ npx eslint --fix .      # 実行と自動修正
 
 ---
 
+## ESLint を試してみる
+
+https://eslint.org/demo
+
+---
+
 ## Jest
 
 https://jestjs.io/ja
@@ -245,6 +251,23 @@ https://jestjs.io/ja
 $ npm i -D jest # インストール
 $ npx jest      # 実行
 ```
+
+---
+
+## Jest を試してみる
+
+<iframe
+  src="https://codesandbox.io/embed/github/kou029w/jest-hands-on/tree/main/templates/template?codemirror=1&hidenavigation=1&previewwindow=tests&view=split&module=%2Fsum.test.js"
+  style="
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  "
+  title="template"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ---
 
@@ -264,6 +287,12 @@ $ npm i -D playwright @playwright/test                      # インストール
 $ npx playwright codegen -o a.test.mjs https://example.com  # テストコードの自動生成
 $ npx playwright test                                       # テストの実行
 ```
+
+---
+
+## Playwright を試してみる
+
+https://try.playwright.tech
 
 ---
 
