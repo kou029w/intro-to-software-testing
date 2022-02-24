@@ -10,6 +10,14 @@ WebDINO Japan エンジニア
 [渡邉浩平](https://github.com/kou029w)
 ![w:200](https://github.com/kou029w.png)
 
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a")?.forEach(function (a) {
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noreferrer");
+  });
+});
+</script>
 <style>
 footer {
   overflow-wrap: anywhere;
