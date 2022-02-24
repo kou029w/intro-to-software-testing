@@ -267,7 +267,7 @@ $ npx playwright test                                       # テストの実行
 
 ---
 
-## ここまでのまとめ
+## まとめ
 
 - 何を・どうやってテストするのか
   - テストピラミッド … コストに応じた適切な粒度と規模を保つ
@@ -275,9 +275,13 @@ $ npx playwright test                                       # テストの実行
 
 ---
 
+# ハンズオン
+
+---
+
 ## Jestではじめるテスト
 
-https://kou029w.github.io/intro-to-software-testing/book/
+https://kou029w.github.io/jest-hands-on/
 
 ---
 
