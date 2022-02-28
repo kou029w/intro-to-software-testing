@@ -53,9 +53,25 @@ footer {
 開発したサービスや製品によって\
 利用者に価値を提供することが目的
 
-![bg right:50%](https://i.gyazo.com/6f612bf15c62fd9b8465bcbe21d4d397.png)
+![bg fit right:50%](https://i.gyazo.com/e5bb4f2e0b19f624e3be42bf3d9ae63f.png)
 
 <!-- _footer: 図の出典: 狩野紀昭 (1984)「魅力的品質と当たり前品質」をもとに改変して作成 -->
+
+---
+
+## 検証
+
+- 作り手のためのテスト
+- 正しく製品を作っているか
+
+## 妥当性確認
+
+- 消費者のためのテスト
+- ビジネスとして妥当か
+
+![bg fit right:55%](https://i.gyazo.com/e1d3e165c1eba7ddbc7e2cae86bb5b5e.png)
+
+<!-- _footer: 図の出典: "The difference between Verification and Validation" https://www.easterbrook.ca/steve/2010/11/the-difference-between-verification-and-validation/ をもとに改変して作成 -->
 
 ---
 
