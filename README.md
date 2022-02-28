@@ -67,11 +67,13 @@ footer {
 
 変更を決めてからその変更が利用者に提供されるまでの一連の継続的な活動
 
-> ![デプロイメントパイプライン](https://i.gyazo.com/96475ee59df81cb75a2e5ca53cba5758.png)
+![w:1080](https://ptuml.hackmd.io/svg/LP7DIiD058NtynGnk6WN-WOfVP1kGZCbmMIcJ2OBbyxrfr9HYuWegD2WGiML1ItuDfUqzIsScyHgO60EvtpSEPVffjfNEajY9-33MEudN6YMxaLYw2i_SH8fP3zKCk6ELXbdMzk3IANQStiCpJl28m8WZD0i48uHlj1yzeJDu1bXN6Sse7X4mVVzxUhkSFsIBnykA_0AuHNXrBMZKzwN8l3SzSci65yN5pTuC2cEdj2SRMOGfiD8RIWqRmWvmWJDHqdb3NOWCwL3prsUJrVpgNswaSO-hO8mAuyjlt1PgzgmlTDfrONQRADsEx_ndqTWMOcyIZImoYAgAaDUhHfSxH58lSWgxtzGbul0VXNx0G00)
 
-<!-- _footer: 図の出典: David Farley, Jez Humble, 和智 右桂, 高木 正弘 (2017)「継続的デリバリー」 -->
+デプロイメントパイプラインによる自動化
 
 すばやく、繰り返し、頻繁にフィードバックを得ることで最適な品質を保ち続ける
+
+<!-- _footer: 図の出典: David Farley, Jez Humble, 和智 右桂, 高木 正弘 (2017)「継続的デリバリー」図1-1をもとに改変して作成 -->
 
 ---
 
@@ -150,7 +152,7 @@ footer {
 
 ユニットテストのような小さなテストを大規模に行い、エンド・トゥ・エンド (E2E) テストのようなコストのかかるテストはできるだけ小規模に保つ
 
-![bg fit right:45%](https://i.gyazo.com/dd948eed8f6c94e7821c92b65e38c960.png)
+![bg fit right:45%](https://i.gyazo.com/ed022666a04104fdb0382c9643e88ab7.png)
 
 <!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
 
