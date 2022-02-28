@@ -66,7 +66,7 @@ footer {
 
 ## 妥当性確認
 
-- 消費者のためのテスト
+- 利用者のためのテスト
 - ビジネスとして妥当か
 
 ![bg fit right:55%](https://i.gyazo.com/e1d3e165c1eba7ddbc7e2cae86bb5b5e.png)
