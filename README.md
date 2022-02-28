@@ -79,7 +79,7 @@ footer {
 
 ---
 
-## CI/CD (Continuous Integration and Continuous Delivery)
+## 継続的インテグレーション・継続的デリバリー (CI/CD)
 
 変更を決めてからその変更が利用者に提供されるまでの一連の継続的な活動
 
@@ -102,7 +102,7 @@ footer {
 
 ---
 
-## Test-Driven Development (TDD)
+## テスト駆動開発 (TDD)
 
 最初からテストをすばやいサイクルで行い続ける設計手法
 
