@@ -271,7 +271,7 @@ https://eslint.org/demo
 
 https://jestjs.io/ja
 
-テスティングフレームワーク
+JavaScript のテストを行うためのフレームワーク
 
 ```console
 $ npm i -D jest # インストール
