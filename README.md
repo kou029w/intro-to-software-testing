@@ -244,7 +244,7 @@ https://www.typescriptlang.org/ja/play
 
 https://eslint.org
 
-静的コード解析ツール
+JavaScript の静的コード解析ツール
 
 チェックできることの例
 
