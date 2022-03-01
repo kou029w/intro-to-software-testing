@@ -308,7 +308,7 @@ Microsoft が開発した E2E テストツール
 ```console
 $ npm i -D playwright @playwright/test                      # インストール
 $ npx playwright codegen -o a.test.mjs https://example.com  # テストコードの自動生成
-$ npx playwright test                                       # テストの実行
+$ npx playwright test --headed                              # テストの実行
 ```
 
 ---
