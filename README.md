@@ -280,16 +280,15 @@ $ npx jest      # 実行
 ## Jest を試してみる
 
 <iframe
-  src="https://codesandbox.io/embed/github/kou029w/jest-hands-on/tree/main/templates/template?fontsize=20&hidenavigation=1&previewwindow=tests&view=split&module=%2Fsum.test.js"
+  src="https://stackblitz.com/github/kou029w/jest-hands-on/tree/main/templates/template?embed=1&hideExplorer=1&view=editor&terminal=test&file=sum.test.js"
   style="
     width: 100%;
-    height: 500px;
+    height: 640px;
     border: 0;
     border-radius: 4px;
     overflow: hidden;
   "
   title="template"
-  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
 ---
