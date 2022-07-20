@@ -280,7 +280,7 @@ $ npx jest      # 実行
 ## Jest を試してみる
 
 <iframe
-  src="https://stackblitz.com/github/kou029w/jest-hands-on/tree/main/templates/template?embed=1&hideExplorer=1&view=editor&terminal=test&file=sum.test.js"
+  src="https://stackblitz.com/github/kou029w/jest-hands-on/tree/main/templates/template?embed=1&view=editor&terminal=test&file=sum.test.js"
   style="
     width: 100%;
     height: 640px;
