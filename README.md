@@ -76,29 +76,6 @@ footer {
 
 ---
 
-## 継続的インテグレーション・継続的デリバリー (CI/CD)
-
-変更を決めてからその変更が利用者に提供されるまでの一連の継続的な活動
-
-![w:1080](https://ptuml.hackmd.io/svg/LP7DIiD058NtynGnk6WN-WOfVP1kGZCbmMIcJ2OBbyxrfr9HYuWegD2WGiML1ItuDfUqzIsScyHgO60EvtpSEPVffjfNEajY9-33MEudN6YMxaLYw2i_SH8fP3zKCk6ELXbdMzk3IANQStiCpJl28m8WZD0i48uHlj1yzeJDu1bXN6Sse7X4mVVzxUhkSFsIBnykA_0AuHNXrBMZKzwN8l3SzSci65yN5pTuC2cEdj2SRMOGfiD8RIWqRmWvmWJDHqdb3NOWCwL3prsUJrVpgNswaSO-hO8mAuyjlt1PgzgmlTDfrONQRADsEx_ndqTWMOcyIZImoYAgAaDUhHfSxH58lSWgxtzGbul0VXNx0G00)
-
-デプロイメントパイプラインによる自動化
-
-すばやく、繰り返し、頻繁にフィードバックを得ることで最適な品質を保ち続ける
-
-<!-- _footer: 図の出典: David Farley, Jez Humble, 和智 右桂, 高木 正弘 (2017)「継続的デリバリー」図1-1をもとに改変して作成 -->
-
----
-
-## デプロイメントパイプラインとフィードバック
-
-どちらも欠かせない
-
-- 自動化していなければシステムをすばやく利用者に提供できない
-- フィードバックがなければ最適なシステムの品質を見極められない
-
----
-
 ## テスト駆動開発 (TDD)
 
 最初からテストをすばやいサイクルで行い続ける設計手法
@@ -124,6 +101,29 @@ footer {
 
 ---
 
+## 継続的インテグレーション・継続的デリバリー (CI/CD)
+
+変更を決めてからその変更が利用者に提供されるまでの一連の継続的な活動
+
+![w:1080](https://ptuml.hackmd.io/svg/LP7DIiD058NtynGnk6WN-WOfVP1kGZCbmMIcJ2OBbyxrfr9HYuWegD2WGiML1ItuDfUqzIsScyHgO60EvtpSEPVffjfNEajY9-33MEudN6YMxaLYw2i_SH8fP3zKCk6ELXbdMzk3IANQStiCpJl28m8WZD0i48uHlj1yzeJDu1bXN6Sse7X4mVVzxUhkSFsIBnykA_0AuHNXrBMZKzwN8l3SzSci65yN5pTuC2cEdj2SRMOGfiD8RIWqRmWvmWJDHqdb3NOWCwL3prsUJrVpgNswaSO-hO8mAuyjlt1PgzgmlTDfrONQRADsEx_ndqTWMOcyIZImoYAgAaDUhHfSxH58lSWgxtzGbul0VXNx0G00)
+
+デプロイメントパイプラインによる自動化
+
+すばやく、繰り返し、頻繁にフィードバックを得ることで最適な品質を保ち続ける
+
+<!-- _footer: 図の出典: David Farley, Jez Humble, 和智 右桂, 高木 正弘 (2017)「継続的デリバリー」図1-1をもとに改変して作成 -->
+
+---
+
+## デプロイメントパイプラインとフィードバック
+
+どちらも欠かせない
+
+- 自動化していなければシステムをすばやく利用者に提供できない
+- フィードバックがなければ最適なシステムの品質を見極められない
+
+---
+
 ## 「なぜ繰り返しテストを行うか」
 
 現代のソフトウェア開発においてこの問い自体あまり重要でなくなった
@@ -141,8 +141,8 @@ footer {
 
 - テストとは品質の評価
 - より良い製品の提供を目指すために、品質を見極め、改善し続ける
-- CI/CD … デプロイメントパインプラインによって提供を行う一連の継続的な活動
 - TDD … 最初からテストをすばやいサイクルで行い続ける設計手法
+- CI/CD … デプロイメントパインプラインによって提供を行う一連の継続的な活動
 
 ---
 
@@ -173,10 +173,10 @@ footer {
 
 ## たとえば
 
-最初に、静的型解析や静的コード解析などゼロコストで始められるものを行う
+最初に、静的コード解析や静的型解析などゼロコストで始められるものを行う
 
+- ツール: ESLintとTypeScript
 - プラットフォーム: GitHub Actions
-- ツール: TypeScript と ESLint
 
 基本的には、ユニットテストなど低コストなテストを行う
 
@@ -185,6 +185,51 @@ footer {
 実際にシステムを運用していくには、E2E テストなど高コストなテストを行う
 
 - ツール: Playwright
+
+---
+
+## ESLint
+
+https://eslint.org
+
+JavaScript の静的コード解析ツール
+
+チェックできることの例
+
+- デッドコードの検知 (no-unused-vars, no-unreachable, etc.)
+- コードの複雑さ (max-lines, max-depth, complexity, etc.)
+
+```console
+$ npm init @eslint/config # インストール
+$ npx eslint --fix .      # 実行と自動修正
+```
+
+---
+
+## ESLint を試してみる
+
+https://eslint.org/demo
+
+---
+
+## TypeScript
+
+https://www.typescriptlang.org
+
+Microsoft が開発した JavaScript に型を指定できるようにした言語
+
+> - 新しい記法を使うが、ブラウザの互換性を維持するコードを書く手法としてコンパイラを使うのが当たり前になってきた
+> - 大規模になると（小規模でも）、型情報があるとエラーチェックが実装中に行われるので開発がしやすくなる
+> - 型を持ったJavaScriptにはTypeScriptとflowtypeの2つがあるが、シェアが高いのがTypeScript
+>
+> 引用元: 仕事ですぐに使える TypeScript ドキュメント 前書き\
+> https://future-architect.github.io/typescript-guide/preface.html
+
+---
+
+## TypeScript を試してみる
+
+https://www.typescriptlang.org/ja/play
 
 ---
 
@@ -216,51 +261,6 @@ jobs:
 ```
 
 テストだけでなく GitHub の提供する実行環境の上で好きなジョブを実行できる
-
----
-
-## TypeScript
-
-https://www.typescriptlang.org
-
-Microsoft が開発した JavaScript に型を指定できるようにした言語
-
-> - 新しい記法を使うが、ブラウザの互換性を維持するコードを書く手法としてコンパイラを使うのが当たり前になってきた
-> - 大規模になると（小規模でも）、型情報があるとエラーチェックが実装中に行われるので開発がしやすくなる
-> - 型を持った JavaScript には TypeScript と flowtype の 2 つがあるが、シェアが高いのが TypeScript
->
-> 引用元: 仕事ですぐに使える TypeScript ドキュメント 前書き\
-> https://future-architect.github.io/typescript-guide/preface.html
-
----
-
-## TypeScript を試してみる
-
-https://www.typescriptlang.org/ja/play
-
----
-
-## ESLint
-
-https://eslint.org
-
-JavaScript の静的コード解析ツール
-
-チェックできることの例
-
-- デッドコードの検知 (no-unused-vars, no-unreachable, etc.)
-- コードの複雑さ (max-lines, max-depth, complexity, etc.)
-
-```console
-$ npm init @eslint/config # インストール
-$ npx eslint --fix .      # 実行と自動修正
-```
-
----
-
-## ESLint を試してみる
-
-https://eslint.org/demo
 
 ---
 
