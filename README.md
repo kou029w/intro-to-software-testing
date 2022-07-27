@@ -208,7 +208,7 @@ $ npx eslint --fix .      # 実行と自動修正
 
 ## ESLint を試してみる
 
-https://eslint.org/demo
+https://eslint.org/play/
 
 ---
 
