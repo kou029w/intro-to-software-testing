@@ -6,23 +6,9 @@ paginate: true
 
 # ソフトウェアテスト概論
 
-WebDINO Japan エンジニア
+WebDINO Japan シニアエンジニア
 [渡邉浩平](https://github.com/kou029w)
 ![w:200](https://github.com/kou029w.png)
-
-<script>
-window.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("a")?.forEach(function (a) {
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noreferrer");
-  });
-});
-</script>
-<style>
-footer {
-  overflow-wrap: anywhere;
-}
-</style>
 
 ---
 
@@ -343,3 +329,19 @@ https://kou029w.github.io/jest-hands-on/
 [このスライドを編集する](https://github.com/kou029w/intro-to-software-testing/edit/main/README.md) / [問題を報告する](https://github.com/kou029w/intro-to-software-testing/issues/new)
 
 [github.svg]: https://cdnjs.cloudflare.com/ajax/libs/simple-icons/5.7.0/github.svg
+
+---
+
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a")?.forEach(function (a) {
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noreferrer");
+  });
+});
+</script>
+<style>
+footer {
+  overflow-wrap: anywhere;
+}
+</style>
