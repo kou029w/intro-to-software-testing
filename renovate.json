@@ -1,4 +1,10 @@
 {
-  "extends": ["config:base", "config:semverAllMonthly"],
-  "automerge": true
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "config:semverAllMonthly",
+    ":automergeAll",
+    ":automergeBranch",
+    ":skipStatusChecks"
+  ]
 }
