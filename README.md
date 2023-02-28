@@ -294,11 +294,11 @@ $ npx playwright codegen -o a.test.mjs https://example.com  # テストコード
 $ npx playwright test --headed                              # テストの実行
 ```
 
----
+<!-- ---
 
 ## Playwright を試してみる
 
-https://try.playwright.tech
+https://try.playwright.tech -->
 
 ---
 
