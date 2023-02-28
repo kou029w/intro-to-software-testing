@@ -202,11 +202,9 @@ https://eslint.org/play/
 
 https://www.typescriptlang.org
 
-Microsoft が開発した JavaScript に型を指定できるようにした言語
+Microsoft が開発した JavaScript に型を指定できるようにした上位互換言語
 
-> - 新しい記法を使うが、ブラウザの互換性を維持するコードを書く手法としてコンパイラを使うのが当たり前になってきた
-> - 大規模になると（小規模でも）、型情報があるとエラーチェックが実装中に行われるので開発がしやすくなる
-> - 型を持ったJavaScriptにはTypeScriptとflowtypeの2つがあるが、シェアが高いのがTypeScript
+> 大規模になってくると、型があるとコーディングが楽になります。型を書く分の手間は多少増えますが、昔の静的型付き言語と異なり、TypeScriptは「明示的に型がわかる場面」では型を省略して書くことができます。また、動的なオブジェクトなど、JavaScriptでよく登場する型もうまく扱えるように設計されています。そのような使い勝手の良さもあり、現在は採用数が伸びています。有名なOSSも実装をTypeScriptに置き換えたり、企業でも積極的な活用が進んでいます。
 >
 > 引用元: 仕事ですぐに使える TypeScript ドキュメント 前書き\
 > https://future-architect.github.io/typescript-guide/preface.html
@@ -283,7 +281,7 @@ $ npx jest      # 実行
 
 https://playwright.dev
 
-Microsoft が開発した E2E テストフレームワーク
+Microsoft が開発した E2E テストを行うためのフレームワーク
 
 クロスブラウザー・クロスプラットフォームをサポート
 
@@ -309,10 +307,10 @@ https://try.playwright.tech
 - 何を・どうやってテストするのか
   - テストピラミッド … コストに応じた適切な粒度と規模を保つ
 - テストを実践するための具体的なツールの紹介
-  - ESLint … JavaScript の静的コード解析ツール
-  - TypeScript … JavaScript に型を指定できるようにした言語
+  - ESLint … JavaScript 静的コード解析ツール
+  - TypeScript … JavaScript 上位互換言語
   - GitHub Actions … 自動実行環境
-  - Jest … JavaScript のテストを行うためのフレームワーク
+  - Jest … JavaScript テストフレームワーク
   - Playwright … E2E テストフレームワーク
 
 ---
