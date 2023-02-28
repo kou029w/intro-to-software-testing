@@ -277,8 +277,6 @@ $ npx jest      # 実行
   title="template"
 ></iframe>
 
-[Jestではじめるテスト](https://kou029w.github.io/jest-hands-on/)
-
 ---
 
 ## Playwright
