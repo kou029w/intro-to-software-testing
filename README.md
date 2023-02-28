@@ -285,7 +285,7 @@ $ npx jest      # 実行
 
 https://playwright.dev
 
-Microsoft が開発した E2E テストツール
+Microsoft が開発した E2E テストフレームワーク
 
 クロスブラウザー・クロスプラットフォームをサポート
 
@@ -311,6 +311,11 @@ https://try.playwright.tech
 - 何を・どうやってテストするのか
   - テストピラミッド … コストに応じた適切な粒度と規模を保つ
 - テストを実践するための具体的なツールの紹介
+  - ESLint … JavaScript の静的コード解析ツール
+  - TypeScript … JavaScript に型を指定できるようにした言語
+  - GitHub Actions … 自動実行環境
+  - Jest … JavaScript のテストを行うためのフレームワーク
+  - Playwright … E2E テストフレームワーク
 
 ---
 
