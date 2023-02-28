@@ -205,9 +205,9 @@ https://www.typescriptlang.org
 Microsoft が開発した JavaScript に型を指定できるようにした上位互換言語
 
 > 大規模になってくると、型があるとコーディングが楽になります。型を書く分の手間は多少増えますが、昔の静的型付き言語と異なり、TypeScriptは「明示的に型がわかる場面」では型を省略して書くことができます。また、動的なオブジェクトなど、JavaScriptでよく登場する型もうまく扱えるように設計されています。そのような使い勝手の良さもあり、現在は採用数が伸びています。有名なOSSも実装をTypeScriptに置き換えたり、企業でも積極的な活用が進んでいます。
->
-> 引用元: 仕事ですぐに使える TypeScript ドキュメント 前書き\
-> https://future-architect.github.io/typescript-guide/preface.html
+> ―― https://future-architect.github.io/typescript-guide/preface.html
+
+<!-- _footer: 引用元: Future Corporation (2019-2020)「仕事ですぐに使えるTypeScript」前書きより -->
 
 ---
 
