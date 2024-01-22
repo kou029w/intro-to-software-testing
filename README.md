@@ -145,32 +145,38 @@ WebDINO Japan シニアエンジニア
 
 ---
 
-## テストピラミッド
+## 自動テストが持つべき性質
 
-コストに応じた適切な粒度と規模を保つテスト戦略
+- Independent/Isolated（独立している）
+- Fast（高速である）
 
-ユニットテストのような小さなテストを大規模に行い、画面の見た目・使いやすさのようなコストのかかるテストはできるだけ小規模に保つ
+<!-- _footer: 参考文献: [保守しやすく変化に強いソフトウェアを支える柱　自動テストとテスト駆動開発、その全体像 ～Software Design 2022年3月号「そろそろはじめるテスト駆動開発」より | gihyo.jp](https://gihyo.jp/article/2024/01/automated-test-and-tdd) -->
 
-![bg fit right:45%](https://i.gyazo.com/ed022666a04104fdb0382c9643e88ab7.png)
+---
 
-<!-- _footer: 参考文献: Mike Cohn (2009) "Succeeding With Agile" -->
+## 自動テストの理想的な状態
+
+- 誰が書くか … テスト対象のコードを書いた本人が
+- いつ書くか … テスト対象のコードを書くとき
+- どのくらい書くか … ムリなく・ムダなく・ムラなく
+- どのくらいの頻度で実行するか … すぐに
+
+<!-- _footer: 参考文献: [保守しやすく変化に強いソフトウェアを支える柱　自動テストとテスト駆動開発、その全体像 ～Software Design 2022年3月号「そろそろはじめるテスト駆動開発」より | gihyo.jp](https://gihyo.jp/article/2024/01/automated-test-and-tdd) -->
 
 ---
 
 ## たとえば
 
-最初に、静的コード解析や静的型解析などゼロコストで始められるものを行う
+静的コード解析や静的型解析などゼロコストで始められるものを行う
 
-- ツール: ESLintとTypeScript
-- プラットフォーム: GitHub Actions
+- ESLint
+- TypeScript
 
-基本的には、ユニットテストなど低コストなテストを行う
+自動実行環境やテスティングフレームワークを使い高速にテストを行う
 
-- ツール: Jest
-
-実際にシステムを運用していくには、E2E テストなど高コストなテストを行う
-
-- ツール: Playwright
+- GitHub Actions
+- Vitest
+- Playwright
 
 ---
 
@@ -248,23 +254,23 @@ jobs:
 
 ---
 
-## Jest
+## Vitest
 
-https://jestjs.io/ja
+https://vitest.dev/
 
-JavaScript のテストを行うためのフレームワーク
+ESM, TypeScript, JSX のテストを行うためのフレームワーク
 
 ```console
-$ npm i -D jest # インストール
-$ npx jest      # 実行
+$ npm i -D vitest # インストール
+$ npx vitest      # 実行
 ```
 
 ---
 
-## Jest を試してみる
+## Vitest を試してみる
 
 <iframe
-  src="https://stackblitz.com/github/kou029w/jest-hands-on/tree/main/templates/template?embed=1&view=editor&terminal=watch&file=sum.js,sum.test.js"
+  src="https://stackblitz.com/github/kou029w/vitest-hands-on/tree/main/templates/template?embed=1&view=editor&terminal=watch&file=sum.js,sum.test.js"
   style="
     width: 100%;
     height: 640px;
@@ -294,23 +300,22 @@ $ npx playwright codegen -o a.test.mjs https://example.com  # テストコード
 $ npx playwright test --headed                              # テストの実行
 ```
 
-<!-- ---
+---
 
 ## Playwright を試してみる
 
-https://try.playwright.tech -->
+https://try.playwright.tech
 
 ---
 
 ## まとめ
 
 - 何を・どうやってテストするのか
-  - テストピラミッド … コストに応じた適切な粒度と規模を保つ
 - テストを実践するための具体的なツールの紹介
   - ESLint … JavaScript 静的コード解析ツール
   - TypeScript … JavaScript 上位互換言語
   - GitHub Actions … 自動実行環境
-  - Jest … JavaScript テストフレームワーク
+  - Vitest … JavaScript テストフレームワーク
   - Playwright … E2E テストフレームワーク
 
 ---
@@ -319,9 +324,9 @@ https://try.playwright.tech -->
 
 ---
 
-## Jestではじめるテスト
+## Vitestではじめるテスト
 
-https://kou029w.github.io/jest-hands-on/
+https://kou029w.github.io/vitest-hands-on/
 
 ---
 
@@ -332,6 +337,10 @@ https://kou029w.github.io/jest-hands-on/
 [github.svg]: https://cdnjs.cloudflare.com/ajax/libs/simple-icons/5.7.0/github.svg
 
 ---
+
+## 過去のハンズオン資料: Jestではじめるテスト
+
+https://kou029w.github.io/jest-hands-on/
 
 <script>
 window.addEventListener("DOMContentLoaded", function () {
