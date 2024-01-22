@@ -1,7 +1,8 @@
 name: github-pages
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 jobs:
   main:
     permissions:
@@ -12,11 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: lts/*, cache: yarn }
+        with:
+          node-version: "lts/*"
+          cache: npm
       - name: Build
         run: |
-          yarn install
-          yarn build
+          npm ci
+          npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: pages

@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.0.0",
-    "prettier": "^3.0.0",
-    "prettier-plugin-md-nocjsp": "^1.5.1"
+    "prettier": "^3.0.0"
   }
 }
