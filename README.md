@@ -66,6 +66,19 @@ WebDINO Japan シニアエンジニア
 
 自動化されたテストプロセス
 
+```js
+import { expect, test } from "vitest";
+import isLeapYear from "./isLeapYear";
+
+test("西暦年号が4で割り切れる年はうるう年", () => {
+  expect(isLeapYear(2024)).toBe(true);
+});
+```
+
+---
+
+## 自動テスト
+
 ソフトウェアの内部品質への投資の損益分岐点は1ヶ月以内[^1]
 
 時間と労力を節約し効率的な品質保証を可能にする
