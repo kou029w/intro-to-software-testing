@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "marp README.md --output pages/index.html",
+    "build": "marp README.md --output pages/index.html && marp README.md --pdf --output pages/intro-to-software-testing.pdf",
     "format": "prettier --write ."
   },
   "devDependencies": {
