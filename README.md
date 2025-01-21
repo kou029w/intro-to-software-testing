@@ -331,7 +331,7 @@ Microsoft が開発した E2E テストを行うためのフレームワーク
 
 ```console
 $ npm i -D playwright @playwright/test                      # インストール
-$ npx playwright codegen -o a.test.mjs https://example.com  # テストコードの自動生成
+$ npx playwright codegen -o a.test.mjs https://todomvc.com  # テストコードの自動生成
 $ npx playwright test --headed                              # テストの実行
 ```
 
