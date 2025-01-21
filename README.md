@@ -60,6 +60,10 @@ WebDINO Japan シニアエンジニア
 
 ## ソフトウェアテストの実践
 
+- 自動テスト
+- テスト駆動開発
+- 継続的インテグレーション・継続的デリバリー
+
 ---
 
 ## 自動テスト
@@ -142,14 +146,35 @@ test("西暦年号が4で割り切れる年はうるう年", () => {
 
 ---
 
-## 「なぜ繰り返しテストを行うか」
+## 世界は不確実
 
-現代のソフトウェア開発においてこの問い自体あまり重要でなくなった
+![bg right:62% 将来ほど予報円が大きく予測困難](https://www.jma.go.jp/jma/kishou/know/typhoon/7-1-1.png)
 
-なぜなら
+<!-- _footer: 図の出典: 気象庁 https://www.jma.go.jp/jma/kishou/know/typhoon/7-1.html -->
 
-- すばやく変化に対応し続けるアジャイルの考え方は技術の進展とともに浸透
-- 一方でリリースして終了というウォーターフォール型のプロジェクトは衰退
+将来ほど予測困難
+
+---
+
+## ソフトウェア開発は不確実
+
+コストは予測困難
+
+![bg right:60% fit Barry W. Boehm (1984)](https://i.gyazo.com/81c2b1a3fdd1eb46ee4f612bd6bef742.png)
+
+<!-- _footer: 図の出典: Barry W. Boehm (1984) "Software Engineering Economics" doi.org/10.1109/TSE.1984.5010193 Fig.3 -->
+
+---
+
+## 現代のソフトウェア開発
+
+- **変化の加速**: 技術革新や市場の需要は急速に変化しており予測可能性は低下
+- **エコシステムの複雑化**: マイクロサービス、クラウド、モバイル、IoTなど、多様な技術が絡み合うことで、システム全体の複雑さは増加
+- **利用者中心の要求**: ユーザーエクスペリエンスの重要性が高まり、迅速なフィードバックループを通じた継続的な改善が求められるように
+
+なぜテストを行うか
+
+- より良い品質の製品を提供するために、品質を見極め、改善し続けるため
 
 <!-- _footer: Netflix (2018)の事例: [数時間でのカナリアリリース](https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249#9868:~:text=Deployments%20are%20routine%20and%20frequent%2C%20canaries%20take%20hours%20instead%20of%20days) -->
 
