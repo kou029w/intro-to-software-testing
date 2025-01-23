@@ -362,6 +362,12 @@ $ npx playwright test --headed                              # テストの実行
 
 ---
 
+## Playwright を試してみる
+
+https://try.playwright.tech
+
+---
+
 ## まとめ
 
 - 何を・どうやってテストするのか
