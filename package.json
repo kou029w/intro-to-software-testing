@@ -8,7 +8,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "4.4.0",
+    "@marp-team/marp-cli": "4.5.0",
     "markdown-link-check": "3.14.2",
     "prettier": "3.8.3"
   }
